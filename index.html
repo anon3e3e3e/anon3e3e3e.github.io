@@ -5,8 +5,21 @@
         <link rel="stylesheet" href="sty.css">
         <link rel="script" href="jsMainPage.js">
 
-        <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
-
+        <script>
+            const musicTracks = [
+                "assets/music/loop1.mp3",
+                "assets/music/loop2.mp3"
+            ];
+            function playRandomTrack() {
+                const audioPlayer = document.getElementById("myAudio");
+                const randomIndex = Math.floor(Math.random() * musicTracks.length);
+                audioPlayer.src = musicTracks[randomIndex];
+                audioPlayer.play();
+            }
+            const audioPlayer = document.getElementById("myAudio");
+            audioPlayer.addEventListener("ended", playRandomTrack);
+            window.onload = playRandomTrack;
+        </script>
 
     </header>
 
@@ -21,7 +34,6 @@
             <div class="dropdown-content">
                 <a href="https://discord.gg/eWReswW9Ad">My Discord :3</a>
                 <a href="https://www.youtube.com/channel/UCwtSWpKumHVmt8DLVOOss8w">My YouTube ^^</a>
-                <a href="#">Apple Music</a>
             </div>
         </div>
     </div>
@@ -39,6 +51,8 @@
 
             <a href="https://docs.google.com/document/d/1G_cVXUF7eXN8MnKHbgv3wmjTEiwrrsOH">The Neo Document</a>
             <a href="https://docs.google.com/document/d/1mbvJZQu5_VpkuPoOXnk0ZSXQa3H3nGNy">Response to the Counter</a>
+
+            <audio id="myAudio" controls></audio>
         </center>
         
     </body>
