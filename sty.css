@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Fancyass;
+    src: url(assets/fonts/beauty.ttf);
+}
+
+@font-face {
+    font-family: bitchassmf;
+    src: url(assets/fonts/Pencil-Regular.ttf);
+}
+
+body {
+    background: #960000;
+    background: linear-gradient(0deg, rgba(150, 0, 150, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    animation-name: bgFade;
+    animation-duration: 1s;
+}
+
+.fuckyou {
+    animation-name: slide-in;
+    animation-duration: 2.5s;
+    text-shadow: 0px 0px 2.5px #FFFFFF;
+    text-shadow: 0px 0px 5px #551111;
+}
+
+.fuckassDesc {
+    animation-name: textFade;
+    animation-duration: 5s;
+}
+
+.linkHell {
+    animation-name: textFadeDELAY;
+    animation-duration: 3.3s;
+}
+
+.cred {
+    animation-name: slide-in-ltr;
+    animation-duration: 2.5s;
+}
+
+H1 {
+    color: aliceblue;
+    font-family: Fancyass;
+    font-weight: 17500;
+    stroke-width: 10;
+}
+
+P {
+    color: aliceblue;
+    font-family: bitchassmf;
+    font-size: large;
+}
+
+a {
+    color: lightcoral;
+    font-family: bitchassmf;
+    font-size: large;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:#550055;
+    overflow: hidden;
+    animation-name: slide-in;
+    animation-duration: 2.5s;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #FF44FF;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #FF44FF;
+    color: white;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: small;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown:hover .dropbtn {
+    background-color: #FFAAFF;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #FFAAFF;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@keyframes textFade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes textFadeDELAY {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@keyframes bgFade {
+    0% {background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    5% {background: linear-gradient(0deg, rgba(7.5, 0, 7.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    10% {background: linear-gradient(0deg, rgba(15, 0, 15, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    15% {background: linear-gradient(0deg, rgba(22.5, 0, 22.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    20% {background: linear-gradient(0deg, rgba(30, 0, 30, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    25% {background: linear-gradient(0deg, rgba(37.5, 0, 37.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    30% {background: linear-gradient(0deg, rgba(45, 0, 45, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    35% {background: linear-gradient(0deg, rgba(52.5, 0, 52.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    40% {background: linear-gradient(0deg, rgba(60, 0, 60, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    45% {background: linear-gradient(0deg, rgba(67.5, 0, 67.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    50% {background: linear-gradient(0deg, rgba(75, 0, 75, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    55% {background: linear-gradient(0deg, rgba(82.5, 0, 82.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    60% {background: linear-gradient(0deg, rgba(90, 0, 90, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    65% {background: linear-gradient(0deg, rgba(97.5, 0, 97.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    70% {background: linear-gradient(0deg, rgba(105, 0, 105, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    75% {background: linear-gradient(0deg, rgba(112.5, 0, 112.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    80% {background: linear-gradient(0deg, rgba(120, 0, 120, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    85% {background: linear-gradient(0deg, rgba(127.5, 0, 127.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    90% {background: linear-gradient(0deg, rgba(135, 0, 135, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    95% {background: linear-gradient(0deg, rgba(142.5, 0, 142.5, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+    100% {background: linear-gradient(0deg, rgba(150, 0, 150, 1) 0%, rgba(0, 0, 0, 1) 100%);}
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-ltr {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
